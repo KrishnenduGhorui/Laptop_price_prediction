@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div style="color:blue">
+        <form action="{{ url_for('predict')}}" method="post">
+            <h2>Laptop price prediction</h2>
+                      
+            <h3>Select Laptop Company Name</h3><br><select id="idcompany" name="Company" required="required">
+			    <option value="Acer">Acer</option>
+                <option value="Apple">Apple</option>
+				<option value="Asus">Asus</option>
+				<option value="Dell">Dell</option>
+				<option value="HP">HP</option>
+				<option value="Lenovo">Lenovo</option>
+				<option value="MSI">MSI</option>
+				<option value="Samsung">Samsung</option>
+				<option value="Toshiba">Toshiba</option>
+				<option value="Company_other">Company_other</option>
+                
+			</select>
+
+            <h3>Select Laptop Type Name</h3><br><select name="TypeName" id="idTypeName" required="required">
+                <option value="Gaming">Gaming</option>
+                <option value="Netbook">Netbook</option>
+                <option value="Notebook">Notebook</option>
+				<option value="Ultrabook">Ultrabook</option>
+				<option value="Workstation">Workstation</option>
+				<option value="2 in 1 Convertible">2 in 1 Convertible</option>
+            </select>
+			
+			<h3>Enter Laptop's Inches</h3><input id="idInches" name="Inches" required="required">
+			<h3>ScreenResolution</h3><input id="idSR" name="ScreenResolution" required="required">
+            <h3>Enter CPU details</h3><input id="idCpu" name="Cpu" required="required">			
+			<h3>Enter Ram size(Ex. 8GB)</h3><input id="idRam" name="Ram" required="required">
+			<h3>Enter Memory details(Ex. '128GB SSD'/'256GB SSD +  1TB HDD')</h3><input id="idMemory" name="Memory" required="required">
+			<h3>Enter Gpu details</h3><input id="idGpu" name="Gpu" required="required">
+			<h3>Select Operating Systeam</h3><br><select name="OpSys" id="idOpSys" required="required">
+                <option value="Android">Android</option>
+                <option value="Chrome OS">Chrome OS</option>
+				<option value="Linux">Linux</option>
+				<option value="Mac OS X">Mac OS X</option>
+				<option value="macOS">macOS</option>
+				<option value="Windows 7">Windows 7</option>
+				<option value="Windows 10">Windows 10</option>
+				<option value="Windows 10 S">Windows 10 S</option>
+				<option value="No OS">No OS</option>
+            </select>
+                 
+			<h3>Enter Laptop's Weight(EX. 1.83kg)</h3><input id="idWeight" name="Weight" required="required">
+            			
+			<br><br><button id="sub" type="submit ">Predict</button>
+            <br>
+
+
+        </form>
+
+
+
+        <br><br><h3>{{ prediction_text }}<h3>
+    </div>
+
+
+
+
+    <style>
+        body {
+            background-color: lightslategray;
+            text-align: center;
+            padding: 0px;
+        }
+             
+        
+        #box {
+            border-radius: 60px;
+            border-color: 45px;
+            border-style: solid;
+            font-family: cursive;
+            text-align: center;
+            background-color: rgb(168, 131, 61);
+            font-size: medium;
+            position: absolute;
+            width: 700px;
+            bottom: 9%;
+            height: 850px;
+            right: 30%;
+            padding: 0px;
+            margin: 0px;
+            font-size: 14px;
+        }
+		
+		 #idcompany {
+            font-size: 18px;
+            width: 100px;
+            height: 23px;
+            top: 23px;
+        }
+        
+        #idTypeName {
+            width: 200px;
+            height: 43px;
+            text-align: center;
+            border-radius: 14px;
+            font-size: 20px;
+        }
+        
+        #idTypeName:hover {
+            background-color: coral;
+        }
+        
+        #idInches {
+            width: 99px;
+            height: 43px;
+            text-align: center;
+            border-radius: 14px;
+            font-size: 18px;
+        }
+        
+        #idInches:hover {
+            background-color: coral;
+        }
+        
+        #idSR {
+            width: 300px;
+            height: 43px;
+            text-align: center;
+            border-radius: 14px;
+            font-size: 18px;
+        }
+        
+        #idSR:hover {
+            background-color: coral;
+        }
+        
+        #sub {
+            width: 120px;
+            height: 43px;
+            text-align: center;
+            border-radius: 14px;
+            font-size: 18px;
+        }
+        
+        #sub:hover {
+            background-color: darkcyan;
+        }
+		 #idCpu {
+            border-radius: 14px;
+            height: 25px;
+            font-size: 20px;
+            text-align: center;
+        }
+		#idRam {
+            border-radius: 14px;
+            height: 25px;
+            font-size: 20px;
+            text-align: center;
+        }
+        
+        #idMemory {
+            border-radius: 14px;
+            height: 25px;
+			width: 250px;
+            font-size: 20px;
+            text-align: center;
+        }
+        #idGpu {
+            border-radius: 14px;
+            height: 25px;
+			width: 250px;
+            font-size: 20px;
+            text-align: center;
+        }
+        #idOpSys {
+            border-radius: 14px;
+            height: 25px;
+            font-size: 20px;
+            text-align: center;
+        }
+		 #idWeight {
+            border-radius: 14px;
+            height: 25px;
+            font-size: 20px;
+            text-align: center;
+        }
+        
+      
+    </style>
+</body>
+
+</html>
