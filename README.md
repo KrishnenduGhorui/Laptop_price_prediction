@@ -4,7 +4,7 @@
 
 **URL of Deployed of ML model** - 
 
-https://prediction-laptop-price.herokuapp.com/predict
+https://prediction-laptop-price.herokuapp.com/
 
 
 **Responsibilities** -
