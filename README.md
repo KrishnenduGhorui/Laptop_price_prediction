@@ -21,6 +21,6 @@ https://prediction-laptop-price.herokuapp.com/
   * For categorical fetaures, very less frequent values are replaced with a new category. Like for fetaure 'Cpu_type' - value 'Cpu_type_other'
   * Did some visualization
   * Encoded categorical data by **LabelEncoder** and scaled by **StandardScaler**.  
-* Built and trained several ML regressor models (**Random Forest Regressor, Support Vector Regressor, Ridge Regressor **).
+* Built and trained several ML regressor models (**Random Forest Regressor, Support Vector Regressor, Ridge Regressor**).
 * Evaluated model’s performance by **R2 score, Adjacent R2 score, rmse, mae**)
 * Deployed the model performing best on **Heroku** platform using **Flask, Pickle**.
