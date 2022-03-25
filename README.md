@@ -26,5 +26,6 @@ https://prediction-laptop-price.herokuapp.com/
 * Deployed the model performing best on **Heroku** platform using **Flask, Pickle**.
 
 Screenshot of web app where model deployed - 
-![image](https://user-images.githubusercontent.com/77465776/160209205-1b8b44ec-25dc-4222-99c9-a8ae5a9f2e8f.png)
+![image](https://user-images.githubusercontent.com/77465776/160210770-f333d9e7-35b5-4611-a972-c445803d47a5.png)
+
 
