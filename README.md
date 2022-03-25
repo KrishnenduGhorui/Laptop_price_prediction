@@ -24,3 +24,7 @@ https://prediction-laptop-price.herokuapp.com/
 * Built and trained several ML regressor models (**Random Forest Regressor, Support Vector Regressor, Ridge Regressor**).
 * Evaluated model’s performance by **R2 score, Adjacent R2 score, rmse, mae**)
 * Deployed the model performing best on **Heroku** platform using **Flask, Pickle**.
+
+Screenshot of web app where model deployed - 
+![image](https://user-images.githubusercontent.com/77465776/160209205-1b8b44ec-25dc-4222-99c9-a8ae5a9f2e8f.png)
+
