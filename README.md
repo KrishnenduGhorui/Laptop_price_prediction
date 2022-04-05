@@ -4,7 +4,9 @@
 
 **URL of Deployed of ML model** - 
 
-https://prediction-laptop-price.herokuapp.com/
+GCP -    https://laptoppriceprediction.df.r.appspot.com
+
+Heroku - https://prediction-laptop-price.herokuapp.com/
 
 
 **Responsibilities** -
@@ -26,6 +28,8 @@ https://prediction-laptop-price.herokuapp.com/
 * Deployed the model performing best on **Heroku** platform using **Flask, Pickle**.
 
 Screenshot of web app where model deployed - 
-![image](https://user-images.githubusercontent.com/77465776/160210770-f333d9e7-35b5-4611-a972-c445803d47a5.png)
+![image](https://user-images.githubusercontent.com/77465776/161654041-d4696b7e-98b4-47d5-9f70-e2397b2fe902.png)
+
+
 
 
